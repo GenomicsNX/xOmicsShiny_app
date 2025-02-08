@@ -1,0 +1,47 @@
+---
+title: "xOmicsShiny: an R shiny application for cross-omics data analysis and pathway mapping" 
+author:
+  - name: Benbo Gao
+    email: benbo.gao@biogen.com
+    affiliation: Biogen
+  - name: Yu (Henry) Sun
+    email: yuhenry.sun@biogen.com
+    affiliation: Biogen
+  - name: Xinmin Zhang
+    email: xinmin@bioinforx.com
+    affiliation: BioInfoRx
+  - name: Tinchi Lin
+    email: tinchi.lin@biogen.com
+    affiliation: Biogen
+  - name: Wei Li
+    email: weili@bioinforx.com
+    affiliation: BioInfoRx
+  - name: Romi Admanit
+    email: romi.admanit@biogen.com
+    affiliation: Biogen
+  - name: Baohong Zhang (Corresponding Author)
+    email: baohong.zhang@biogen.com
+    affiliation: Biogen
+  - name: These authors contribute equally, Benbo Gao, Yu (Henry) Sun
+address:
+  - code: Research Data Sciences, Translational Biology, Biogen, Inc
+    address: 225 Binney St, Cambridge, MA 02142, USA
+  - code: Data Science, BioInfoRx, Inc
+    address: 510 Charmany Dr, Suite 275A, Madison, WI 53719, USA
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+---
+
+```{r, echo = FALSE}
+colorize <- function(x, color) {
+  sprintf("<span style='color: %s;'>%s</span>", color, x)
+}
+```
+
+# Preface {-}
+
+This is a *user manual* written using Bookdown, which provides a detailed guide for xOmicsShiny.
+
+[![](https://interactivereport.github.io/xOmicsShiny/images/Cover.png)](https://interactivereport.github.io/xOmicsShiny/images/Cover.png){target="_blank"}
+
+**Cover Image: Overview of the xOmicsShiny modules.** The Shiny application handles multi-omics data including transcriptomics, proteomics, metabolomics, and lipidomics data. The **`r colorize("Data Merging", "grey")`** (Grey) module integrates multi-omics data for downstream analysis. **`r colorize("Data exploration", "dodgerblue")`** modules (Blue) contain QC, DEGs, Heatmap, Expression, and Venn Diagram modules. **`r colorize("Geneset Enrichment", "darkseagreen")`** (Green) module performs GSEA and pathway analysis. **`r colorize("Network modules", "burlywood")`** (Bisque) include WGCNA, Correlation Network, and PCSF modules. **`r colorize("Pattern and trend analysis", "orchid")`** (Orchid) consists of Pattern, Dose Response, Time Course, and Monotonic Trend modules.
